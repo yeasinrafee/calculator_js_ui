@@ -27,6 +27,7 @@
 .display {
   align-items: center;
   width: 20rem;
+  height: 7.5rem;
   padding: 1rem;
   grid-column: span 4;
   box-shadow: inset -6px -6px 13px #fff,
@@ -41,12 +42,13 @@
   color: rgb(26, 25, 25);
   text-align: end;
   font-size: 3rem;
+  word-wrap: break-word;
+  word-break: break-all;
 }
-.display.top {
-  height: 3rem;
-}
-.display.main {
-  height: 6rem;
+.prev-display {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+  color: rgba(26, 25, 25, 0.753);
 }
 
 .btn {
@@ -73,4 +75,18 @@
   -moz-border-radius: 30%;
   -ms-border-radius: 30%;
   -o-border-radius: 30%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  color: #ddd;
+  font-size: 1.5rem;
 }
